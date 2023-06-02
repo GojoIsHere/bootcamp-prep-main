@@ -1,3 +1,6 @@
 let happyNum = 1000;
 
-let myNum = 5
+let newNum =2000;
+let result = newNum/=happyNum;
+
+console.log(result*2+1);
