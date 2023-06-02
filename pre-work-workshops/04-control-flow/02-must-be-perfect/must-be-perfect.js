@@ -1,9 +1,15 @@
-let word = 'carrots';
-// let word = 'pacific';
-// let word = 'perfecto';
-// let word = 'perfect';
+let word = "carrots";
+// let word1= 'pacific';
+// let word2 = 'perfecto';
 
 
 let lastWord;
 
-// YOUR CODE BELOW
+
+if(word[0]==="p" && word.length===7){
+    lastWord = word.toUpperCase();
+    console.log(lastWord);
+}else{
+    lastWord = word;
+    console.log(lastWord);
+   }
