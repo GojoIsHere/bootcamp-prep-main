@@ -1,4 +1,4 @@
-debugger;
+// zero dark thirty 
 function zeroDarkThirty(num){
     let newNum='';
     if(num === 0){
