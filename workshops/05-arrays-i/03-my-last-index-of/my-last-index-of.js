@@ -1,34 +1,29 @@
 function myLastIndexOf(arra, serachValue, startIdx){
+   
     if(startIdx === undefined){
         let x;
-        for(i=0;i<arra.length;i++){
+        for(i=arra.length-1;i>=0;i--){
             
             if(arra[i]===serachValue){
                 x = i;
-                continue;
+                return x;
             }
             
         }
-        if(x === undefined){
-            return -1
-        }else{
-            return x;
-        }
+        
+         return -1
+        
     }else{
         if(startIdx<arra.length){
             let x;
-            let y = arra.slice(startIdx);
-            for(i=0;i<y.length;i++){
-                if(y[i]===serachValue){
-                    x = i;
-                    continue;
+            for(i=startIdx;i>=0;i--){
+                if(arra[i]===serachValue){
+                    x =i;
+                    return x;
                 }
             }
-            if(x === undefined){
-                return -1
-            }else{
-                return x;
-            }
+            return -1
+            
         }else{
             return "start index is larger then array length";
         }
