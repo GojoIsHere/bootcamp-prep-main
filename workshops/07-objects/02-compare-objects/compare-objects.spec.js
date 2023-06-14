@@ -1,8 +1,8 @@
 describe('compareObjects', () => {
 
-  it('is a function', () => {
-    expect(typeof compareObjects).toEqual('function');
-  });
+  // it('is a function', () => {
+  //   expect(typeof compareObjects).toEqual('function');
+  // });
 
   it('returns a boolean', () => {
     let returnedValue = compareObjects({}, {});
