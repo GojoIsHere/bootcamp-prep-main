@@ -30,7 +30,10 @@ let tacoCatInc = {
   },
 
   sale: function (odrs) {
-    if (Object.keys(odrs).length === 0) return 0;
+    if (Object.keys(odrs).length === 0)
+     {
+       return 0;
+      }
     let totalSale = 0;
     for (let keys in odrs) {
       let item = odrs[keys];
@@ -47,3 +50,10 @@ let tacoCatInc = {
   cash: 0,
 };
 
+// YOUR CODE BELOW
+// let order = {
+//   gourmetShell: "hard treat shell",
+//   gourmetFishFilling: "salmon",
+// };
+// tacoCatInc.sale(order);
+// console.log(tacoCatInc.cash);
