@@ -4,10 +4,8 @@ function finderFunction(array, callback){
         if(a === true){
             return i;
         }
-        else{
-            return -1;
-        }
     }
+    return -1;
 }
 
 
