@@ -1,19 +1,30 @@
+debugger
 function mostVowels(word){
     let defaultString = "";
     let defaultCount = 0;
     let newCount = 0;
     let newString = '';
-    for(let i = 0; i<word.length ; i++){
-        for(j=i; word[j]!== " "; j++){
-            if(word[j] === 'a' || word[j] === 'e' || word[j] === 'i' || word[j] === 'o' || word[j] === 'u' || word[j] === 'A' || word[j] === 'E' || word[j] === 'I' || word[j] === 'O' || word[j] === 'U' )
-            {
-                newCount +=1;
-                newString += word[j];
-                break ;
-            }
+    for(i=0; i<word.length; i++){
+        newString += word[i];
+       if(word[i]!==' '){
+           if(word[i] === 'a' || word[i] === 'e' || word[i] === 'i' || word[i] === 'o' || word[i] === 'u' || word[i] === 'A' || word[i] === 'E' || word[i] === 'I' || word[i] === 'O' || word[i] === 'U' )
+        {
+            newCount +=1;   
+        }
+        }
+        if(word[i]=== ' '){
+            newCount= 0;
+            newString = '';
         }
         if(newCount>defaultCount){
-            
+            defaultString = newString;
+           
         }
+
+        
     }
+   return defaultString; 
+    
 }
+a = 'my name is Sushil'
+console.log(mostVowels(a));
